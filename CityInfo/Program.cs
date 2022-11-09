@@ -44,8 +44,10 @@ builder.Services.AddTransient<IMailService, CloudMailService>();
 builder.Services.AddSingleton<CitiesDataStore>();
 
 //adding the database through dependency injection
-builder.Services.AddDbContext<CityInfoContext>(dbContextOptions =>
-dbContextOptions.UseSqlite("Data Source=CityInfo.db"));
+builder.Services.AddDbContext<CityInfoContext>(
+    dbContextOptions =>
+        dbContextOptions.UseSqlite(
+            builder.Configuration["ConnectionString:CityInfoDBConnectionString"]));
 
 builder.Services.AddSwaggerGen();
 

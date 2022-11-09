@@ -22,7 +22,7 @@
       "launchBrowser": true,
       "applicationUrl": "https://localhost:7052",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Production"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "CityInfo.API": {

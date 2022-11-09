@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "zKJ1xPChfb17Lz2pA4idckvnGrjrZ1Mbbm9YFMsBw5XE8H11AYqQFDSf/pXzHAnYnUxTqhqpiTcrvlZeB1eJUQ==",
+  "dgSpecHash": "EAJKFO3scgMiPVOvuMZpsqbTTN45XuMg8Lgn8DjewUTgtX9Z234ygnc8hQ7MjI/VmIujR8Coh1A9FpG2QuuJ8Q==",
   "success": true,
-  "projectFilePath": "/Users/ronnieking/Documents/DotNetApps/CityInfo/CityInfo/CityInfo.API.csproj",
+  "projectFilePath": "/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/CityInfo.API.csproj",
   "expectedPackageFiles": [
     "/Users/ronnieking/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/messagepackanalyzer/2.1.152/messagepackanalyzer.2.1.152.nupkg.sha512",
-    "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.jsonpatch/6.0.10/microsoft.aspnetcore.jsonpatch.6.0.10.nupkg.sha512",
+    "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.jsonpatch/7.0.0/microsoft.aspnetcore.jsonpatch.7.0.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/6.0.10/microsoft.aspnetcore.mvc.newtonsoftjson.6.0.10.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.0/microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.bcl.asyncinterfaces/5.0.0/microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
