@@ -49,6 +49,8 @@ builder.Services.AddDbContext<CityInfoContext>(
         dbContextOptions.UseSqlite(
             builder.Configuration["ConnectionString:CityInfoDBConnectionString"]));
 
+builder.Services.AddScoped<ICityInfoRepository, CityInfoRepository>();
+
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
