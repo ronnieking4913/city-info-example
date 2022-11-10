@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EAJKFO3scgMiPVOvuMZpsqbTTN45XuMg8Lgn8DjewUTgtX9Z234ygnc8hQ7MjI/VmIujR8Coh1A9FpG2QuuJ8Q==",
+  "dgSpecHash": "3o0FeIwLrFevTKyn+jxZM6wRmObOX2pOlJCqdMupuldqYVwgH1qbJQx5uVmXFiuGxbKq7YuRevwxE7Mq5CAjAg==",
   "success": true,
   "projectFilePath": "/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/CityInfo.API.csproj",
   "expectedPackageFiles": [
+    "/Users/ronnieking/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/Users/ronnieking/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",

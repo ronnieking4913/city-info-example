@@ -805,3 +805,5 @@
 /Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/obj/Debug/net6.0/example-project.pdb
 /Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/obj/Debug/net6.0/CityInfo.API.genruntimeconfig.cache
 /Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/obj/Debug/net6.0/ref/example-project.dll
+/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/bin/Debug/net6.0/AutoMapper.dll
+/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

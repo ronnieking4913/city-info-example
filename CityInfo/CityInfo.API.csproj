@@ -24,10 +24,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Controllers\Models\" />
     <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
     <None Remove="Swashbuckle.AspNetCore.Swagger" />
     <None Remove="Swashbuckle.AspNetCore" />
@@ -36,18 +36,22 @@
     <None Remove="Serilog.AspNetCore" />
     <None Remove="Serilog.Sinks.File" />
     <None Remove="Serilog.Sinks.Console" />
-    <None Remove="Controllers\Models\Services\" />
-    <None Remove="Controllers\Entities\" />
     <None Remove="Microsoft.EntityFrameworkCore" />
-    <None Remove="Controllers\DbContexts\" />
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Services\" />
+    <None Remove="Profiles\" />
+    <None Remove="DbContexts\" />
+    <None Remove="Entities\" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\Models\" />
-    <Folder Include="Controllers\Models\Services\" />
-    <Folder Include="Controllers\Entities\" />
-    <Folder Include="Controllers\DbContexts\" />
+    <Folder Include="Services\" />
+    <Folder Include="Profiles\" />
+    <Folder Include="DbContexts\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Controllers\FilesController.cs">
