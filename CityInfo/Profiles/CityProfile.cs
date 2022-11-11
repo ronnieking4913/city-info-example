@@ -1,5 +1,4 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 
 namespace CityInfo.API.Profiles
 {
@@ -9,6 +8,8 @@ namespace CityInfo.API.Profiles
 		{
 			//source - destination
 			CreateMap<Entities.City, Models.CityWithoutPointsOfInterestDTO>();
+
+			CreateMap<Entities.City, Models.CityDto>();
 		}
 	}
 }

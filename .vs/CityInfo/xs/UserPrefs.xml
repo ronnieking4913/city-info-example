@@ -1,7 +1,12 @@
 ﻿<Properties StartupConfiguration="{2E192918-666F-4CFD-B4BB-BBE5F35005CF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CityInfo/Properties/launchSettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CityInfo/Controllers/PointsOfInterestController.cs">
     <Files>
-      <File FileName="CityInfo/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="CityInfo/Controllers/CitiesController.cs" Line="35" Column="40" />
+      <File FileName="CityInfo/Profiles/CityProfile.cs" Line="13" Column="47" />
+      <File FileName="CityInfo/Profiles/PointOfInterestProfile.cs" Line="11" Column="69" />
+      <File FileName="CityInfo/Controllers/PointsOfInterestController.cs" Line="162" Column="71" />
+      <File FileName="CityInfo/Services/CityInfoRepository.cs" Line="65" Column="10" />
+      <File FileName="CityInfo/Services/ICityInfoRepository.cs" Line="23" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,7 +14,12 @@
           <Node name="CityInfo" expanded="True">
             <Node name="CityInfo.API" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Properties" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="PointsOfInterestController.cs" selected="True" />
+              </Node>
+              <Node name="Entities" expanded="True" />
+              <Node name="Profiles" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -19,8 +29,8 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.CityInfo.API PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CityInfo.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

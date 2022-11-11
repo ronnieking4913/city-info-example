@@ -32,8 +32,22 @@ namespace CityInfo.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<CityDto> GetCiy(int id)
+        public async Task<IActionResult> GetCiy(int id, bool includePointsOfInterest = false)
         {
+
+            var city = await _cityInfoRepository.GetCityAsync(id, includePointsOfInterest);
+
+            if(city == null)
+            {
+                return NotFound();
+            }
+
+            if (includePointsOfInterest)
+            {
+                return Ok(_mapper.Map<CityDto>(city));
+            }
+
+            return Ok(_mapper.Map<CityWithoutPointsOfInterestDTO>(city));
             //var cityFound = _citiesDataStore.Cities
             //    .FirstOrDeFault();
 
@@ -43,7 +57,6 @@ namespace CityInfo.API.Controllers
             //}
 
             //return Ok(cityFound);
-            return Ok();
         }
     }
 }
