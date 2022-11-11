@@ -3745,3 +3745,9 @@ WHERE "p"."CityId" = @__cityId_0
 2022-11-10 19:29:23.277 -06:00 [DBG] Connection id "0HMM3GGBMNN89" stopped.
 2022-11-10 19:29:23.279 -06:00 [DBG] Connection id "0HMM3GGBMNN88" sending FIN because: "The Socket transport's send loop completed gracefully."
 2022-11-10 19:29:23.279 -06:00 [DBG] Connection id "0HMM3GGBMNN89" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 19:31:33.088 -06:00 [DBG] Connection id "0HMM3GGBMNN8B" disconnecting.
+2022-11-10 19:31:33.089 -06:00 [DBG] Connection id "0HMM3GGBMNN8B" stopped.
+2022-11-10 19:31:33.089 -06:00 [DBG] Connection id "0HMM3GGBMNN8B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-10 19:31:38.297 -06:00 [INF] Application is shutting down...
+2022-11-10 19:31:38.298 -06:00 [DBG] Hosting stopping
+2022-11-10 19:31:38.302 -06:00 [DBG] Hosting stopped

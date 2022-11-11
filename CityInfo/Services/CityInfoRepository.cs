@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using CityInfo.API.DbContexts;
 using CityInfo.API.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -59,6 +60,11 @@ namespace CityInfo.API.Services
             {
                 city.PointsOfInterest.Add(pointOfInterest);
             }
+        }
+
+        public void DeletePointOfInterest(PointOfInterest pointOfInterest)
+        {
+            _context.PointsOfInterests.Remove(pointOfInterest);
         }
 
         public async Task<bool> SaveChangesAsync()
