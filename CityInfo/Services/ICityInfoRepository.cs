@@ -9,7 +9,7 @@ namespace CityInfo.API.Services
 		//Using IQueryable allows you to build on the query before it is even executed EX: ORDER BY
 		//By using Task, this makes the method asynchronous
 		Task<IEnumerable<City>> GetCitiesAsync();
-		Task<IEnumerable<City>> GetCitiesAsync(string? name, string? searchQuery, int pageNumber, int pageSize);
+		Task<(IEnumerable<City>, PaginationMetadata)> GetCitiesAsync(string? name, string? searchQuery, int pageNumber, int pageSize);
 
 		Task<City?> GetCityAsync(int cityId, bool includePointsOfInterest);
 

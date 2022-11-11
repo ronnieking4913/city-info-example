@@ -20,7 +20,7 @@ namespace CityInfo.API.Services
         {
             return await _context.Cities.OrderBy(c => c.Name).ToListAsync();
         } 
-        public async Task<IEnumerable<City>> GetCitiesAsync(
+        public async Task<(IEnumerable<City>, PaginationMetadata)> GetCitiesAsync(
             string? name, 
             string? searchQuery,
             int pageNumber,
@@ -42,16 +42,18 @@ namespace CityInfo.API.Services
                 || (c.Description != null && c.Description.Contains(searchQuery)));
             }
 
-            return await collection
+            var totalItemCount = await collection.CountAsync();
+
+            var pageMetadata = new PaginationMetadata(
+                totalItemCount, pageSize, pageNumber);
+
+            var collectionToReturn = await collection
                 .OrderBy(c => c.Name)
                 .Skip(pageSize * (pageNumber - 1))          //skip the first pages up unto the page we want
                 .Take(pageSize)                             // get the page size requested
                 .ToListAsync();
 
-            return await _context.Cities
-                .Where(c => c.Name == name)
-                .OrderBy(c => c.Name)
-                .ToListAsync();
+            return (collectionToReturn, pageMetadata);
         } 
 
         public async Task<City?> GetCityAsync(int cityId, bool includePointsOfInterest)
