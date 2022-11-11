@@ -14,7 +14,7 @@ namespace CityInfo.API.Services
 
 		Task<IEnumerable<PointOfInterest>> GetPointsOfInterestAsync(int cityId);
 
-		Task<PointOfInterest?> GetPointOfInterestAsync(int cityId, int pointOfInterestId);
+		Task<PointOfInterest?> GetPointOfInterestForCityAsync(int cityId, int pointOfInterestId);
 
 		Task<bool> CityExistsAsync(int cityId);
 
