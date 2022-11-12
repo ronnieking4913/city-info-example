@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 
-//This is cusom logging using a third party logging system serilog.aspnet and serilog.sinks.console and serilog.sinks.file
+//This is custom logging using a third party logging system serilog.aspnet and serilog.sinks.console and serilog.sinks.file
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .WriteTo.Console()
@@ -31,9 +31,6 @@ builder.Services.AddControllers(options =>
 })
     .AddNewtonsoftJson()                            //This is from adding the dependencies mvc.newtonsoft.json and .jsonpatch 
     .AddXmlDataContractSerializerFormatters();      //Accepts xml requests
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSingleton<FileExtensionContentTypeProvider>();      //using all types of file extensions for downloading files
 
@@ -97,6 +94,8 @@ builder.Services.AddApiVersioning(setupAction =>
     setupAction.ReportApiVersions = true;
 });
 
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
