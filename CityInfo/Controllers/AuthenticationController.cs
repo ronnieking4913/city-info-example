@@ -94,7 +94,7 @@ public class AuthenticationController : ControllerBase
             userName:"ronnie.king",
             firstName:"Ronnie",
             lastName:"King",
-            city:"Saint Louis");
+            city:"Antwerp");
     }
 
 }
