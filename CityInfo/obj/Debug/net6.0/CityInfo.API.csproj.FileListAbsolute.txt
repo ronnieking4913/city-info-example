@@ -812,3 +812,6 @@
 /Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
 /Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
 /Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

@@ -1,8 +1,10 @@
-﻿using CityInfo.API;
+﻿using System.Text;
+using CityInfo.API;
 using CityInfo.API.DbContexts;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
 
 //This is cusom logging using a third party logging system serilog.aspnet and serilog.sinks.console and serilog.sinks.file
@@ -54,6 +56,23 @@ builder.Services.AddScoped<ICityInfoRepository, CityInfoRepository>();
 //add auto mapper to the project
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+//add authentication
+builder.Services.AddAuthentication("Bearer")
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new()
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Authentication:Issuer"],
+            ValidAudience = builder.Configuration["Authentication:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.ASCII.GetBytes(builder.Configuration["Authentication:SecretForKey"]))
+
+        };
+    });
+
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
@@ -68,6 +87,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dEU3bs1HD792b89bALSmVwqBSc1H+MTy08iPodfXy7pAKH6qXfGydSqwCgRxcH+KIV4LsNao3xUDdPI6+4DA0w==",
+  "dgSpecHash": "USgW4oCaEHnCpdZMEN6FSC3alda295c0EQfJyhu9nhn/21XNwH7eG7/3WCD7dEKXSztk7gW2gTIjQd+e3sgBbg==",
   "success": true,
   "projectFilePath": "/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/CityInfo.API.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "/Users/ronnieking/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/messagepackanalyzer/2.1.152/messagepackanalyzer.2.1.152.nupkg.sha512",
+    "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.11/microsoft.aspnetcore.authentication.jwtbearer.6.0.11.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.jsonpatch/7.0.0/microsoft.aspnetcore.jsonpatch.7.0.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/6.0.10/microsoft.aspnetcore.mvc.newtonsoftjson.6.0.10.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.0/microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
@@ -62,6 +63,8 @@
     "/Users/ronnieking/.nuget/packages/microsoft.identitymodel.abstractions/6.25.0/microsoft.identitymodel.abstractions.6.25.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.25.0/microsoft.identitymodel.jsonwebtokens.6.25.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.identitymodel.logging/6.25.0/microsoft.identitymodel.logging.6.25.0.nupkg.sha512",
+    "/Users/ronnieking/.nuget/packages/microsoft.identitymodel.protocols/6.10.0/microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "/Users/ronnieking/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.10.0/microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.identitymodel.tokens/6.25.0/microsoft.identitymodel.tokens.6.25.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.net.stringtools/1.0.0/microsoft.net.stringtools.1.0.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.netcore.platforms/2.1.2/microsoft.netcore.platforms.2.1.2.nupkg.sha512",

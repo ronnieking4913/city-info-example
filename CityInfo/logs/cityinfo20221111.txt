@@ -2204,3 +2204,425 @@ System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport
 2022-11-11 19:17:12.216 -06:00 [INF] Application is shutting down...
 2022-11-11 19:17:12.217 -06:00 [DBG] Hosting stopping
 2022-11-11 19:17:12.221 -06:00 [DBG] Hosting stopped
+2022-11-11 19:30:48.106 -06:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-11 19:30:48.167 -06:00 [DBG] Hosting starting
+2022-11-11 19:30:48.174 -06:00 [INF] User profile is available. Using '/Users/ronnieking/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-11-11 19:30:48.175 -06:00 [DBG] Reading data from file '/Users/ronnieking/.aspnet/DataProtection-Keys/key-96fad0be-91c0-4a45-b605-64e78dd9911b.xml'.
+2022-11-11 19:30:48.179 -06:00 [DBG] Found key {96fad0be-91c0-4a45-b605-64e78dd9911b}.
+2022-11-11 19:30:48.184 -06:00 [DBG] Considering key {96fad0be-91c0-4a45-b605-64e78dd9911b} with expiration date 2023-01-24 19:43:14Z as default key.
+2022-11-11 19:30:48.184 -06:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-11-11 19:30:48.187 -06:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-11-11 19:30:48.187 -06:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-11-11 19:30:48.190 -06:00 [DBG] Using key {96fad0be-91c0-4a45-b605-64e78dd9911b} as the default key.
+2022-11-11 19:30:48.190 -06:00 [DBG] Key ring with default key {96fad0be-91c0-4a45-b605-64e78dd9911b} was loaded during application startup.
+2022-11-11 19:30:48.266 -06:00 [DBG] Using development certificate: CN=localhost (Thumbprint: B212D6DD2CE488D1BD7C656E6E355CF5A0307663)
+2022-11-11 19:30:48.283 -06:00 [INF] Now listening on: https://localhost:55332
+2022-11-11 19:30:48.283 -06:00 [INF] Now listening on: http://localhost:27377
+2022-11-11 19:30:48.283 -06:00 [DBG] Loaded hosting startup assembly example-project
+2022-11-11 19:30:48.283 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-11 19:30:48.283 -06:00 [INF] Hosting environment: Development
+2022-11-11 19:30:48.283 -06:00 [INF] Content root path: /Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/
+2022-11-11 19:30:48.283 -06:00 [DBG] Hosting started
+2022-11-11 19:30:48.416 -06:00 [DBG] Connection id "0HMM49M3H9N8B" received FIN.
+2022-11-11 19:30:48.419 -06:00 [DBG] Connection id "0HMM49M3H9N8B" accepted.
+2022-11-11 19:30:48.420 -06:00 [DBG] Connection id "0HMM49M3H9N8B" started.
+2022-11-11 19:30:48.425 -06:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-11 19:30:48.436 -06:00 [DBG] Connection id "0HMM49M3H9N8B" stopped.
+2022-11-11 19:30:48.438 -06:00 [DBG] Connection id "0HMM49M3H9N8B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-11 19:30:48.454 -06:00 [DBG] Connection id "0HMM49M3H9N8C" accepted.
+2022-11-11 19:30:48.454 -06:00 [DBG] Connection id "0HMM49M3H9N8C" started.
+2022-11-11 19:30:48.491 -06:00 [DBG] Connection 0HMM49M3H9N8C established using the following protocol: "Tls12"
+2022-11-11 19:30:48.508 -06:00 [INF] Request starting HTTP/1.1 GET https://localhost:55332/ - -
+2022-11-11 19:30:48.509 -06:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-11 19:30:48.534 -06:00 [DBG] The request path  does not match the path filter
+2022-11-11 19:30:48.547 -06:00 [DBG] No candidates found for the request path '/'
+2022-11-11 19:30:48.547 -06:00 [DBG] Request did not match any endpoints
+2022-11-11 19:30:48.549 -06:00 [DBG] Connection id "0HMM49M3H9N8C" completed keep alive response.
+2022-11-11 19:30:48.550 -06:00 [INF] Request finished HTTP/1.1 GET https://localhost:55332/ - - - 404 0 - 43.5369ms
+2022-11-11 19:31:10.455 -06:00 [DBG] Connection id "0HMM49M3H9N8D" received FIN.
+2022-11-11 19:31:10.456 -06:00 [DBG] Connection id "0HMM49M3H9N8D" accepted.
+2022-11-11 19:31:10.456 -06:00 [DBG] Connection id "0HMM49M3H9N8E" accepted.
+2022-11-11 19:31:10.456 -06:00 [DBG] Connection id "0HMM49M3H9N8D" started.
+2022-11-11 19:31:10.457 -06:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-11 19:31:10.458 -06:00 [DBG] Connection id "0HMM49M3H9N8D" stopped.
+2022-11-11 19:31:10.459 -06:00 [DBG] Connection id "0HMM49M3H9N8E" started.
+2022-11-11 19:31:10.467 -06:00 [DBG] Connection id "0HMM49M3H9N8D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-11 19:31:10.491 -06:00 [DBG] Connection 0HMM49M3H9N8E established using the following protocol: "Tls12"
+2022-11-11 19:31:10.495 -06:00 [INF] Request starting HTTP/1.1 GET https://localhost:55332/api/cities - -
+2022-11-11 19:31:10.496 -06:00 [DBG] The request path  does not match the path filter
+2022-11-11 19:31:10.500 -06:00 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2022-11-11 19:31:10.503 -06:00 [DBG] Endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (example-project)' with route pattern 'api/cities' is valid for the request path '/api/cities'
+2022-11-11 19:31:10.503 -06:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (example-project)'
+2022-11-11 19:31:10.506 -06:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-11-11 19:31:10.507 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-11 19:31:10.511 -06:00 [DBG] Connection id "0HMM49M3H9N8E" completed keep alive response.
+2022-11-11 19:31:10.511 -06:00 [INF] Request finished HTTP/1.1 GET https://localhost:55332/api/cities - - - 500 - text/plain;+charset=utf-8 15.3353ms
+2022-11-11 19:31:19.436 -06:00 [DBG] Connection id "0HMM49M3H9N8C" received FIN.
+2022-11-11 19:31:19.438 -06:00 [DBG] Connection id "0HMM49M3H9N8C" sending FIN because: "The client closed the connection."
+2022-11-11 19:31:19.443 -06:00 [DBG] Connection id "0HMM49M3H9N8C" disconnecting.
+2022-11-11 19:31:19.445 -06:00 [DBG] Connection id "0HMM49M3H9N8C" stopped.
+2022-11-11 19:33:03.560 -06:00 [INF] Application is shutting down...
+2022-11-11 19:33:03.562 -06:00 [DBG] Hosting stopping
+2022-11-11 19:33:03.574 -06:00 [DBG] Connection id "0HMM49M3H9N8E" disconnecting.
+2022-11-11 19:33:03.574 -06:00 [DBG] Connection id "0HMM49M3H9N8E" stopped.
+2022-11-11 19:33:03.574 -06:00 [DBG] Connection id "0HMM49M3H9N8E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-11 19:33:03.577 -06:00 [DBG] Hosting stopped
+2022-11-11 19:35:31.252 -06:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-11 19:35:31.298 -06:00 [DBG] Hosting starting
+2022-11-11 19:35:31.309 -06:00 [INF] User profile is available. Using '/Users/ronnieking/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-11-11 19:35:31.311 -06:00 [DBG] Reading data from file '/Users/ronnieking/.aspnet/DataProtection-Keys/key-96fad0be-91c0-4a45-b605-64e78dd9911b.xml'.
+2022-11-11 19:35:31.314 -06:00 [DBG] Found key {96fad0be-91c0-4a45-b605-64e78dd9911b}.
+2022-11-11 19:35:31.318 -06:00 [DBG] Considering key {96fad0be-91c0-4a45-b605-64e78dd9911b} with expiration date 2023-01-24 19:43:14Z as default key.
+2022-11-11 19:35:31.318 -06:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-11-11 19:35:31.323 -06:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-11-11 19:35:31.323 -06:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-11-11 19:35:31.326 -06:00 [DBG] Using key {96fad0be-91c0-4a45-b605-64e78dd9911b} as the default key.
+2022-11-11 19:35:31.326 -06:00 [DBG] Key ring with default key {96fad0be-91c0-4a45-b605-64e78dd9911b} was loaded during application startup.
+2022-11-11 19:35:31.401 -06:00 [DBG] Using development certificate: CN=localhost (Thumbprint: B212D6DD2CE488D1BD7C656E6E355CF5A0307663)
+2022-11-11 19:35:31.511 -06:00 [INF] Now listening on: https://localhost:55332
+2022-11-11 19:35:31.511 -06:00 [INF] Now listening on: http://localhost:27377
+2022-11-11 19:35:31.511 -06:00 [DBG] Loaded hosting startup assembly example-project
+2022-11-11 19:35:31.511 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-11 19:35:31.511 -06:00 [INF] Hosting environment: Development
+2022-11-11 19:35:31.511 -06:00 [INF] Content root path: /Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/
+2022-11-11 19:35:31.511 -06:00 [DBG] Hosting started
+2022-11-11 19:35:31.642 -06:00 [DBG] Connection id "0HMM49ONUBJ27" received FIN.
+2022-11-11 19:35:31.646 -06:00 [DBG] Connection id "0HMM49ONUBJ27" accepted.
+2022-11-11 19:35:31.646 -06:00 [DBG] Connection id "0HMM49ONUBJ27" started.
+2022-11-11 19:35:31.653 -06:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-11 19:35:31.670 -06:00 [DBG] Connection id "0HMM49ONUBJ27" stopped.
+2022-11-11 19:35:31.672 -06:00 [DBG] Connection id "0HMM49ONUBJ27" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-11 19:35:31.680 -06:00 [DBG] Connection id "0HMM49ONUBJ28" accepted.
+2022-11-11 19:35:31.681 -06:00 [DBG] Connection id "0HMM49ONUBJ28" started.
+2022-11-11 19:35:31.715 -06:00 [DBG] Connection 0HMM49ONUBJ28 established using the following protocol: "Tls12"
+2022-11-11 19:35:31.726 -06:00 [INF] Request starting HTTP/1.1 GET https://localhost:55332/ - -
+2022-11-11 19:35:31.726 -06:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-11 19:35:31.743 -06:00 [DBG] The request path  does not match the path filter
+2022-11-11 19:35:31.753 -06:00 [DBG] No candidates found for the request path '/'
+2022-11-11 19:35:31.753 -06:00 [DBG] Request did not match any endpoints
+2022-11-11 19:35:31.755 -06:00 [DBG] Connection id "0HMM49ONUBJ28" completed keep alive response.
+2022-11-11 19:35:31.755 -06:00 [INF] Request finished HTTP/1.1 GET https://localhost:55332/ - - - 404 0 - 30.5723ms
+2022-11-11 19:35:37.107 -06:00 [DBG] Connection id "0HMM49ONUBJ29" received FIN.
+2022-11-11 19:35:37.108 -06:00 [DBG] Connection id "0HMM49ONUBJ29" accepted.
+2022-11-11 19:35:37.132 -06:00 [DBG] Connection id "0HMM49ONUBJ29" started.
+2022-11-11 19:35:37.186 -06:00 [DBG] Connection id "0HMM49ONUBJ2A" accepted.
+2022-11-11 19:35:37.186 -06:00 [DBG] Connection id "0HMM49ONUBJ2A" started.
+2022-11-11 19:35:37.186 -06:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-11 19:35:37.187 -06:00 [DBG] Connection id "0HMM49ONUBJ29" stopped.
+2022-11-11 19:35:37.187 -06:00 [DBG] Connection id "0HMM49ONUBJ29" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-11 19:35:37.212 -06:00 [DBG] Connection 0HMM49ONUBJ2A established using the following protocol: "Tls12"
+2022-11-11 19:35:37.266 -06:00 [INF] Request starting HTTP/1.1 GET https://localhost:55332/api/cities - -
+2022-11-11 19:35:37.266 -06:00 [DBG] The request path  does not match the path filter
+2022-11-11 19:35:37.270 -06:00 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2022-11-11 19:35:37.271 -06:00 [DBG] Endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (example-project)' with route pattern 'api/cities' is valid for the request path '/api/cities'
+2022-11-11 19:35:37.271 -06:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (example-project)'
+2022-11-11 19:35:37.274 -06:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-11-11 19:35:37.276 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-11 19:35:37.281 -06:00 [DBG] Connection id "0HMM49ONUBJ2A" completed keep alive response.
+2022-11-11 19:35:37.281 -06:00 [INF] Request finished HTTP/1.1 GET https://localhost:55332/api/cities - - - 500 - text/plain;+charset=utf-8 15.2870ms
+2022-11-11 19:36:02.759 -06:00 [DBG] Connection id "0HMM49ONUBJ28" received FIN.
+2022-11-11 19:36:02.827 -06:00 [DBG] Connection id "0HMM49ONUBJ28" sending FIN because: "The client closed the connection."
+2022-11-11 19:36:02.861 -06:00 [DBG] Connection id "0HMM49ONUBJ28" disconnecting.
+2022-11-11 19:36:02.918 -06:00 [DBG] Connection id "0HMM49ONUBJ28" stopped.
+2022-11-11 19:37:28.551 -06:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-11 19:37:28.610 -06:00 [DBG] Hosting starting
+2022-11-11 19:37:28.614 -06:00 [INF] User profile is available. Using '/Users/ronnieking/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-11-11 19:37:28.615 -06:00 [DBG] Reading data from file '/Users/ronnieking/.aspnet/DataProtection-Keys/key-96fad0be-91c0-4a45-b605-64e78dd9911b.xml'.
+2022-11-11 19:37:28.620 -06:00 [DBG] Found key {96fad0be-91c0-4a45-b605-64e78dd9911b}.
+2022-11-11 19:37:28.625 -06:00 [DBG] Considering key {96fad0be-91c0-4a45-b605-64e78dd9911b} with expiration date 2023-01-24 19:43:14Z as default key.
+2022-11-11 19:37:28.625 -06:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-11-11 19:37:28.626 -06:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-11-11 19:37:28.627 -06:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-11-11 19:37:28.629 -06:00 [DBG] Using key {96fad0be-91c0-4a45-b605-64e78dd9911b} as the default key.
+2022-11-11 19:37:28.629 -06:00 [DBG] Key ring with default key {96fad0be-91c0-4a45-b605-64e78dd9911b} was loaded during application startup.
+2022-11-11 19:37:28.685 -06:00 [DBG] Using development certificate: CN=localhost (Thumbprint: B212D6DD2CE488D1BD7C656E6E355CF5A0307663)
+2022-11-11 19:37:28.692 -06:00 [INF] Now listening on: https://localhost:55332
+2022-11-11 19:37:28.692 -06:00 [INF] Now listening on: http://localhost:27377
+2022-11-11 19:37:28.692 -06:00 [DBG] Loaded hosting startup assembly example-project
+2022-11-11 19:37:28.692 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-11 19:37:28.692 -06:00 [INF] Hosting environment: Development
+2022-11-11 19:37:28.692 -06:00 [INF] Content root path: /Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/
+2022-11-11 19:37:28.692 -06:00 [DBG] Hosting started
+2022-11-11 19:37:28.953 -06:00 [DBG] Connection id "0HMM49PQT41LN" received FIN.
+2022-11-11 19:37:28.957 -06:00 [DBG] Connection id "0HMM49PQT41LN" accepted.
+2022-11-11 19:37:28.957 -06:00 [DBG] Connection id "0HMM49PQT41LN" started.
+2022-11-11 19:37:28.961 -06:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-11 19:37:28.969 -06:00 [DBG] Connection id "0HMM49PQT41LN" stopped.
+2022-11-11 19:37:28.972 -06:00 [DBG] Connection id "0HMM49PQT41LN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-11 19:37:29.006 -06:00 [DBG] Connection id "0HMM49PQT41LO" accepted.
+2022-11-11 19:37:29.006 -06:00 [DBG] Connection id "0HMM49PQT41LO" started.
+2022-11-11 19:37:29.044 -06:00 [DBG] Connection 0HMM49PQT41LO established using the following protocol: "Tls12"
+2022-11-11 19:37:29.061 -06:00 [INF] Request starting HTTP/1.1 GET https://localhost:55332/ - -
+2022-11-11 19:37:29.061 -06:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-11 19:37:29.086 -06:00 [DBG] The request path  does not match the path filter
+2022-11-11 19:37:29.099 -06:00 [DBG] No candidates found for the request path '/'
+2022-11-11 19:37:29.099 -06:00 [DBG] Request did not match any endpoints
+2022-11-11 19:37:29.123 -06:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-11-11 19:37:29.124 -06:00 [DBG] Connection id "0HMM49PQT41LO" completed keep alive response.
+2022-11-11 19:37:29.125 -06:00 [INF] Request finished HTTP/1.1 GET https://localhost:55332/ - - - 404 0 - 66.5548ms
+2022-11-11 19:37:32.185 -06:00 [DBG] Connection id "0HMM49PQT41LP" received FIN.
+2022-11-11 19:37:32.186 -06:00 [DBG] Connection id "0HMM49PQT41LP" accepted.
+2022-11-11 19:37:32.187 -06:00 [DBG] Connection id "0HMM49PQT41LQ" accepted.
+2022-11-11 19:37:32.187 -06:00 [DBG] Connection id "0HMM49PQT41LP" started.
+2022-11-11 19:37:32.188 -06:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-11 19:37:32.190 -06:00 [DBG] Connection id "0HMM49PQT41LP" stopped.
+2022-11-11 19:37:32.190 -06:00 [DBG] Connection id "0HMM49PQT41LQ" started.
+2022-11-11 19:37:32.196 -06:00 [DBG] Connection id "0HMM49PQT41LP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-11 19:37:32.227 -06:00 [DBG] Connection 0HMM49PQT41LQ established using the following protocol: "Tls12"
+2022-11-11 19:37:32.232 -06:00 [INF] Request starting HTTP/1.1 GET https://localhost:55332/api/cities - -
+2022-11-11 19:37:32.232 -06:00 [DBG] The request path  does not match the path filter
+2022-11-11 19:37:32.237 -06:00 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2022-11-11 19:37:32.240 -06:00 [DBG] Endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (example-project)' with route pattern 'api/cities' is valid for the request path '/api/cities'
+2022-11-11 19:37:32.240 -06:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (example-project)'
+2022-11-11 19:37:32.241 -06:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-11-11 19:37:32.243 -06:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-11-11 19:37:32.247 -06:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-11-11 19:37:32.247 -06:00 [DBG] Connection id "0HMM49PQT41LQ" completed keep alive response.
+2022-11-11 19:37:32.247 -06:00 [INF] Request finished HTTP/1.1 GET https://localhost:55332/api/cities - - - 401 0 - 14.9859ms
+2022-11-11 19:38:00.007 -06:00 [DBG] Connection id "0HMM49PQT41LO" received FIN.
+2022-11-11 19:38:00.007 -06:00 [DBG] Connection id "0HMM49PQT41LO" sending FIN because: "The client closed the connection."
+2022-11-11 19:38:00.009 -06:00 [DBG] Connection id "0HMM49PQT41LO" disconnecting.
+2022-11-11 19:38:00.010 -06:00 [DBG] Connection id "0HMM49PQT41LO" stopped.
+2022-11-11 19:38:08.096 -06:00 [INF] Application is shutting down...
+2022-11-11 19:38:08.097 -06:00 [DBG] Hosting stopping
+2022-11-11 19:38:08.106 -06:00 [DBG] Connection id "0HMM49PQT41LQ" disconnecting.
+2022-11-11 19:38:08.107 -06:00 [DBG] Connection id "0HMM49PQT41LQ" stopped.
+2022-11-11 19:38:08.107 -06:00 [DBG] Connection id "0HMM49PQT41LQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-11 19:38:08.109 -06:00 [DBG] Hosting stopped
+2022-11-11 19:38:58.729 -06:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-11 19:38:58.786 -06:00 [DBG] Hosting starting
+2022-11-11 19:38:58.789 -06:00 [INF] User profile is available. Using '/Users/ronnieking/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2022-11-11 19:38:58.790 -06:00 [DBG] Reading data from file '/Users/ronnieking/.aspnet/DataProtection-Keys/key-96fad0be-91c0-4a45-b605-64e78dd9911b.xml'.
+2022-11-11 19:38:58.794 -06:00 [DBG] Found key {96fad0be-91c0-4a45-b605-64e78dd9911b}.
+2022-11-11 19:38:58.799 -06:00 [DBG] Considering key {96fad0be-91c0-4a45-b605-64e78dd9911b} with expiration date 2023-01-24 19:43:14Z as default key.
+2022-11-11 19:38:58.800 -06:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2022-11-11 19:38:58.801 -06:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2022-11-11 19:38:58.801 -06:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2022-11-11 19:38:58.803 -06:00 [DBG] Using key {96fad0be-91c0-4a45-b605-64e78dd9911b} as the default key.
+2022-11-11 19:38:58.804 -06:00 [DBG] Key ring with default key {96fad0be-91c0-4a45-b605-64e78dd9911b} was loaded during application startup.
+2022-11-11 19:38:58.860 -06:00 [DBG] Using development certificate: CN=localhost (Thumbprint: B212D6DD2CE488D1BD7C656E6E355CF5A0307663)
+2022-11-11 19:38:58.866 -06:00 [INF] Now listening on: https://localhost:55332
+2022-11-11 19:38:58.866 -06:00 [INF] Now listening on: http://localhost:27377
+2022-11-11 19:38:58.867 -06:00 [DBG] Loaded hosting startup assembly example-project
+2022-11-11 19:38:58.867 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-11 19:38:58.867 -06:00 [INF] Hosting environment: Development
+2022-11-11 19:38:58.867 -06:00 [INF] Content root path: /Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/
+2022-11-11 19:38:58.867 -06:00 [DBG] Hosting started
+2022-11-11 19:38:59.160 -06:00 [DBG] Connection id "0HMM49QLPCQ8F" received FIN.
+2022-11-11 19:38:59.170 -06:00 [DBG] Connection id "0HMM49QLPCQ8F" accepted.
+2022-11-11 19:38:59.170 -06:00 [DBG] Connection id "0HMM49QLPCQ8F" started.
+2022-11-11 19:38:59.177 -06:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-11 19:38:59.186 -06:00 [DBG] Connection id "0HMM49QLPCQ8F" stopped.
+2022-11-11 19:38:59.188 -06:00 [DBG] Connection id "0HMM49QLPCQ8F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-11 19:38:59.203 -06:00 [DBG] Connection id "0HMM49QLPCQ8G" accepted.
+2022-11-11 19:38:59.204 -06:00 [DBG] Connection id "0HMM49QLPCQ8G" started.
+2022-11-11 19:38:59.243 -06:00 [DBG] Connection 0HMM49QLPCQ8G established using the following protocol: "Tls12"
+2022-11-11 19:38:59.259 -06:00 [INF] Request starting HTTP/1.1 GET https://localhost:55332/ - -
+2022-11-11 19:38:59.260 -06:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-11 19:38:59.284 -06:00 [DBG] The request path  does not match the path filter
+2022-11-11 19:38:59.296 -06:00 [DBG] No candidates found for the request path '/'
+2022-11-11 19:38:59.296 -06:00 [DBG] Request did not match any endpoints
+2022-11-11 19:38:59.315 -06:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2022-11-11 19:38:59.316 -06:00 [DBG] Connection id "0HMM49QLPCQ8G" completed keep alive response.
+2022-11-11 19:38:59.317 -06:00 [INF] Request finished HTTP/1.1 GET https://localhost:55332/ - - - 404 0 - 59.6034ms
+2022-11-11 19:39:02.420 -06:00 [DBG] Connection id "0HMM49QLPCQ8H" received FIN.
+2022-11-11 19:39:02.421 -06:00 [DBG] Connection id "0HMM49QLPCQ8H" accepted.
+2022-11-11 19:39:02.421 -06:00 [DBG] Connection id "0HMM49QLPCQ8I" accepted.
+2022-11-11 19:39:02.421 -06:00 [DBG] Connection id "0HMM49QLPCQ8H" started.
+2022-11-11 19:39:02.422 -06:00 [DBG] Connection id "0HMM49QLPCQ8I" started.
+2022-11-11 19:39:02.422 -06:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-11 19:39:02.423 -06:00 [DBG] Connection id "0HMM49QLPCQ8H" stopped.
+2022-11-11 19:39:02.423 -06:00 [DBG] Connection id "0HMM49QLPCQ8H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-11 19:39:02.456 -06:00 [DBG] Connection 0HMM49QLPCQ8I established using the following protocol: "Tls12"
+2022-11-11 19:39:02.461 -06:00 [INF] Request starting HTTP/1.1 GET https://localhost:55332/api/cities - -
+2022-11-11 19:39:02.462 -06:00 [DBG] The request path  does not match the path filter
+2022-11-11 19:39:02.465 -06:00 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2022-11-11 19:39:02.468 -06:00 [DBG] Endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (example-project)' with route pattern 'api/cities' is valid for the request path '/api/cities'
+2022-11-11 19:39:02.468 -06:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (example-project)'
+2022-11-11 19:39:02.592 -06:00 [DBG] Successfully validated the token.
+2022-11-11 19:39:02.593 -06:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2022-11-11 19:39:02.595 -06:00 [DBG] Authorization was successful.
+2022-11-11 19:39:02.595 -06:00 [INF] Executing endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (example-project)'
+2022-11-11 19:39:02.610 -06:00 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CityInfo.API.Models.CityWithoutPointsOfInterestDTO]]] GetCities(System.String, System.String, Int32, Int32) on controller CityInfo.API.Controllers.CitiesController (example-project).
+2022-11-11 19:39:02.610 -06:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-11 19:39:02.610 -06:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-11 19:39:02.610 -06:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-11 19:39:02.611 -06:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-11 19:39:02.611 -06:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-11 19:39:02.611 -06:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.CitiesController (example-project)
+2022-11-11 19:39:02.695 -06:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-11-11 19:39:02.805 -06:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.CitiesController (example-project)
+2022-11-11 19:39:02.806 -06:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' ...
+2022-11-11 19:39:02.807 -06:00 [DBG] Attempting to bind parameter 'name' of type 'System.String' using the name '' in request data ...
+2022-11-11 19:39:02.807 -06:00 [DBG] Could not find a value in the request with name '' for binding parameter 'name' of type 'System.String'.
+2022-11-11 19:39:02.807 -06:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-11 19:39:02.807 -06:00 [DBG] Done attempting to bind parameter 'name' of type 'System.String'.
+2022-11-11 19:39:02.807 -06:00 [DBG] Attempting to validate the bound parameter 'name' of type 'System.String' ...
+2022-11-11 19:39:02.807 -06:00 [DBG] Done attempting to validate the bound parameter 'name' of type 'System.String'.
+2022-11-11 19:39:02.808 -06:00 [DBG] Attempting to bind parameter 'searchQuery' of type 'System.String' ...
+2022-11-11 19:39:02.808 -06:00 [DBG] Attempting to bind parameter 'searchQuery' of type 'System.String' using the name '' in request data ...
+2022-11-11 19:39:02.809 -06:00 [DBG] Could not find a value in the request with name '' for binding parameter 'searchQuery' of type 'System.String'.
+2022-11-11 19:39:02.809 -06:00 [DBG] Done attempting to bind parameter 'searchQuery' of type 'System.String'.
+2022-11-11 19:39:02.809 -06:00 [DBG] Done attempting to bind parameter 'searchQuery' of type 'System.String'.
+2022-11-11 19:39:02.809 -06:00 [DBG] Attempting to validate the bound parameter 'searchQuery' of type 'System.String' ...
+2022-11-11 19:39:02.809 -06:00 [DBG] Done attempting to validate the bound parameter 'searchQuery' of type 'System.String'.
+2022-11-11 19:39:02.809 -06:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-11 19:39:02.809 -06:00 [DBG] Attempting to bind parameter 'pageNumber' of type 'System.Int32' using the name '' in request data ...
+2022-11-11 19:39:02.809 -06:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageNumber' of type 'System.Int32'.
+2022-11-11 19:39:02.809 -06:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-11 19:39:02.809 -06:00 [DBG] Done attempting to bind parameter 'pageNumber' of type 'System.Int32'.
+2022-11-11 19:39:02.809 -06:00 [DBG] Attempting to validate the bound parameter 'pageNumber' of type 'System.Int32' ...
+2022-11-11 19:39:02.809 -06:00 [DBG] Done attempting to validate the bound parameter 'pageNumber' of type 'System.Int32'.
+2022-11-11 19:39:02.809 -06:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' ...
+2022-11-11 19:39:02.809 -06:00 [DBG] Attempting to bind parameter 'pageSize' of type 'System.Int32' using the name '' in request data ...
+2022-11-11 19:39:02.809 -06:00 [DBG] Could not find a value in the request with name '' for binding parameter 'pageSize' of type 'System.Int32'.
+2022-11-11 19:39:02.809 -06:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-11 19:39:02.809 -06:00 [DBG] Done attempting to bind parameter 'pageSize' of type 'System.Int32'.
+2022-11-11 19:39:02.809 -06:00 [DBG] Attempting to validate the bound parameter 'pageSize' of type 'System.Int32' ...
+2022-11-11 19:39:02.809 -06:00 [DBG] Done attempting to validate the bound parameter 'pageSize' of type 'System.Int32'.
+2022-11-11 19:39:03.436 -06:00 [INF] Entity Framework Core 6.0.10 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.10' with options: None
+2022-11-11 19:39:03.463 -06:00 [DBG] Compiling query expression: 
+'DbSet<City>()
+    .Count()'
+2022-11-11 19:39:03.566 -06:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT COUNT(*)
+            FROM Cities AS c), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        CityInfo.API.DbContexts.CityInfoContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2022-11-11 19:39:03.595 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-11-11 19:39:03.622 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (25ms).
+2022-11-11 19:39:03.626 -06:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2022-11-11 19:39:03.640 -06:00 [DBG] Opened connection to database 'main' on server '/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/CityInfo.db'.
+2022-11-11 19:39:03.647 -06:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Cities" AS "c"
+2022-11-11 19:39:03.662 -06:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Cities" AS "c"
+2022-11-11 19:39:03.669 -06:00 [DBG] A data reader was disposed.
+2022-11-11 19:39:03.672 -06:00 [DBG] Closing connection to database 'main' on server '/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/CityInfo.db'.
+2022-11-11 19:39:03.675 -06:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2022-11-11 19:39:03.682 -06:00 [DBG] Compiling query expression: 
+'DbSet<City>()
+    .OrderBy(c => c.Name)
+    .Skip(__p_0)
+    .Take(__p_1)'
+2022-11-11 19:39:03.721 -06:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<City>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: City.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: City.Description (string) MaxLength(200), 1], [Property: City.Name (string) Required MaxLength(50), 2] }
+        SELECT c.Id, c.Description, c.Name
+        FROM Cities AS c
+        ORDER BY c.Name ASC
+        OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, City>, 
+    CityInfo.API.DbContexts.CityInfoContext, 
+    False, 
+    False, 
+    True
+)'
+2022-11-11 19:39:03.727 -06:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-11-11 19:39:03.727 -06:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-11-11 19:39:03.730 -06:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2022-11-11 19:39:03.730 -06:00 [DBG] Opened connection to database 'main' on server '/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/CityInfo.db'.
+2022-11-11 19:39:03.732 -06:00 [DBG] Executing DbCommand [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Description", "c"."Name"
+FROM "Cities" AS "c"
+ORDER BY "c"."Name"
+LIMIT @__p_1 OFFSET @__p_0
+2022-11-11 19:39:03.735 -06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Description", "c"."Name"
+FROM "Cities" AS "c"
+ORDER BY "c"."Name"
+LIMIT @__p_1 OFFSET @__p_0
+2022-11-11 19:39:03.748 -06:00 [DBG] Context 'CityInfoContext' started tracking 'City' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-11-11 19:39:03.762 -06:00 [DBG] Context 'CityInfoContext' started tracking 'City' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-11-11 19:39:03.763 -06:00 [DBG] Context 'CityInfoContext' started tracking 'City' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-11-11 19:39:03.763 -06:00 [DBG] A data reader was disposed.
+2022-11-11 19:39:03.763 -06:00 [DBG] Closing connection to database 'main' on server '/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/CityInfo.db'.
+2022-11-11 19:39:03.763 -06:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2022-11-11 19:39:03.780 -06:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-11 19:39:03.781 -06:00 [DBG] No information found on request to perform content negotiation.
+2022-11-11 19:39:03.781 -06:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-11 19:39:03.781 -06:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-11 19:39:03.781 -06:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-11 19:39:03.781 -06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Models.CityWithoutPointsOfInterestDTO, example-project, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-11 19:39:03.867 -06:00 [INF] Executed action CityInfo.API.Controllers.CitiesController.GetCities (example-project) in 1253.1776ms
+2022-11-11 19:39:03.867 -06:00 [INF] Executed endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (example-project)'
+2022-11-11 19:39:03.867 -06:00 [DBG] Connection id "0HMM49QLPCQ8I" completed keep alive response.
+2022-11-11 19:39:03.868 -06:00 [DBG] 'CityInfoContext' disposed.
+2022-11-11 19:39:03.870 -06:00 [INF] Request finished HTTP/1.1 GET https://localhost:55332/api/cities - - - 200 238 application/json;+charset=utf-8 1408.4752ms
+2022-11-11 19:39:30.208 -06:00 [DBG] Connection id "0HMM49QLPCQ8G" received FIN.
+2022-11-11 19:39:30.209 -06:00 [DBG] Connection id "0HMM49QLPCQ8G" sending FIN because: "The client closed the connection."
+2022-11-11 19:39:30.212 -06:00 [DBG] Connection id "0HMM49QLPCQ8G" disconnecting.
+2022-11-11 19:39:30.213 -06:00 [DBG] Connection id "0HMM49QLPCQ8G" stopped.
+2022-11-11 19:41:14.965 -06:00 [DBG] Connection id "0HMM49QLPCQ8I" disconnecting.
+2022-11-11 19:41:14.967 -06:00 [DBG] Connection id "0HMM49QLPCQ8I" stopped.
+2022-11-11 19:41:14.967 -06:00 [DBG] Connection id "0HMM49QLPCQ8I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-11 19:44:54.123 -06:00 [INF] Application is shutting down...
+2022-11-11 19:44:54.124 -06:00 [DBG] Hosting stopping
+2022-11-11 19:44:54.127 -06:00 [DBG] Hosting stopped
