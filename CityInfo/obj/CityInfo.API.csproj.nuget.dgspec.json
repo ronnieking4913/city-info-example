@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/CityInfo.API.csproj",
-        "projectName": "example-project",
+        "projectName": "CityInfo.API",
         "projectPath": "/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/CityInfo.API.csproj",
         "packagesPath": "/Users/ronnieking/.nuget/packages/",
         "outputPath": "/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/obj/",

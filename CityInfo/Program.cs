@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Reflection;
+using System.Text;
 using CityInfo.API;
 using CityInfo.API.DbContexts;
 using CityInfo.API.Services;
@@ -6,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Serilog;
 
 //This is custom logging using a third party logging system serilog.aspnet and serilog.sinks.console and serilog.sinks.file
@@ -96,7 +98,40 @@ builder.Services.AddApiVersioning(setupAction =>
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(setupAction =>
+{
+    var xmlCommentsFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlCommentsFullPath = Path.Combine(AppContext.BaseDirectory, xmlCommentsFile);
+    
+    // tell swagger where to locate the xml documentation file
+    setupAction.IncludeXmlComments(xmlCommentsFullPath);
+    
+    //add the authentication documentation
+    setupAction.AddSecurityDefinition("CityInfoApiBearerAuth", new OpenApiSecurityScheme()
+    {
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer",
+        Description = "Input a valid token to gain access to this API"
+    });
+    
+    //must add the authentication to the document spec
+    setupAction.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "CityInfoApiBearerAuth"
+                }
+            }, new List<String>()
+        
+        }
+    });
+    
+});
 
 var app = builder.Build();
 

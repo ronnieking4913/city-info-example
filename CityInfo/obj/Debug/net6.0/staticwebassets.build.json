@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "wP6FTEMUsQh3MV+51xOJKw7sWfw2as5XILKCvrrQ30U=",
-  "Source": "example-project",
-  "BasePath": "_content/example-project",
+  "Hash": "MNxdU726kbS2GEMM1U83h9Fi0G+KpyFDVMLRDezIZ9w=",
+  "Source": "CityInfo.API",
+  "BasePath": "_content/CityInfo.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

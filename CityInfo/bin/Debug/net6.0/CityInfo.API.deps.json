@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "example-project/1.0.0": {
+      "CityInfo.API/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.11",
@@ -25,7 +25,7 @@
           "System.IdentityModel.Tokens.Jwt": "6.25.0"
         },
         "runtime": {
-          "example-project.dll": {}
+          "CityInfo.API.dll": {}
         }
       },
       "AutoMapper/12.0.0": {
@@ -2588,7 +2588,7 @@
     }
   },
   "libraries": {
-    "example-project/1.0.0": {
+    "CityInfo.API/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
