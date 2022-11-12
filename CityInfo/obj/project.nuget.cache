@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "USgW4oCaEHnCpdZMEN6FSC3alda295c0EQfJyhu9nhn/21XNwH7eG7/3WCD7dEKXSztk7gW2gTIjQd+e3sgBbg==",
+  "dgSpecHash": "Km3okhAwnzObTAi01XbSq9dEWPYfkDmqefCiqS74pTGzYTsw2xDObMwxwy+BrpJ/a4HrfiBVij66OD1Q6MNgbA==",
   "success": true,
   "projectFilePath": "/Users/ronnieking/Documents/DotNetApps/city-info-example/CityInfo/CityInfo.API.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.11/microsoft.aspnetcore.authentication.jwtbearer.6.0.11.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.jsonpatch/7.0.0/microsoft.aspnetcore.jsonpatch.7.0.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/6.0.10/microsoft.aspnetcore.mvc.newtonsoftjson.6.0.10.nupkg.sha512",
+    "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.mvc.versioning/5.0.0/microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.0/microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.bcl.asyncinterfaces/5.0.0/microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "/Users/ronnieking/.nuget/packages/microsoft.build/17.0.0/microsoft.build.17.0.0.nupkg.sha512",
